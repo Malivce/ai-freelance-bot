@@ -39,6 +39,6 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 application.add_handler(CommandHandler("start", start))
 application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
-# Запуск (если напрямую через Python, не через FastAPI)
+
 if __name__ == "__main__":
     application.run_polling()
