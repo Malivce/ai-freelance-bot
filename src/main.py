@@ -23,7 +23,7 @@ application = Application.builder().token(TELEGRAM_BOT_TOKEN).build()
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Привет! Я твой Telegram-бот с OpenAI.")
+    await update.message.reply_text("Hello.")
 
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
